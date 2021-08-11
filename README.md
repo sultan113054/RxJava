@@ -1,2 +1,2 @@
 # RxJava
-Basic Implementation of RxJava in android
+Basic Implementation and functionality of RxJava with examples
