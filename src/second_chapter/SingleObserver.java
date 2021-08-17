@@ -8,6 +8,7 @@ public class SingleObserver {
         Single.just("hello")
                 .map(String::length)
                 .subscribe(o-> System.out.println(o));
+        Observable.just("first","second").first("second").subscribe(p-> System.out.printf(p));
 
     }
 }
