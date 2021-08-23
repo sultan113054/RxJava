@@ -2,6 +2,7 @@ package third_chapter;
 
 import io.reactivex.rxjava3.core.Observable;
 
+import java.util.HashSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -30,8 +31,13 @@ public class CollectionOperator {
                 .toMap( String::length)
                 .subscribe(p -> System.out.println(p));*/
 
-        Observable.just("abc", "def")
+       /* Observable.just("abc", "def")
                 .toMultimap( String::length)
-                .subscribe(p -> System.out.println(p));
+                .subscribe(p -> System.out.println(p));*/
+
+        Observable.just("1","2","3")
+                .collect(HashSet<String>::new,HashSet::add)
+                .subscribe(p-> System.out.println(p));
+
     }
 }
