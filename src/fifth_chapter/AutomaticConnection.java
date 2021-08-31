@@ -1,9 +1,7 @@
-package five_chapter;
+package fifth_chapter;
 
 import io.reactivex.rxjava3.core.Observable;
-import io.reactivex.rxjava3.observables.ConnectableObservable;
 
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 public class AutomaticConnection {
